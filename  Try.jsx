@@ -1,9 +1,12 @@
-import React from 'react';
+const React = require('react')
+const { useState, useRef } = React;
 
-const Try = () => {
+const Try = ({tryInfo}) => {
     return (
-        <div>
-            Try
-        </div>
+        <li>
+            <div>{tryInfo.try}</div>
+            <div>{tryInfo.result}</div>
+        </li>
     )
 }
+module.exports =  Try;

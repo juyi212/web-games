@@ -6,6 +6,7 @@ const WordRelay = require('./components/WordRelay')
 const NumberBaseball = require ('./components/NumberBaseball')
 const RCP = require('./components/RCP')
 const Lotto = require('./components/Lotto')
+const TicTacToe = require('./components/TicTacToe')
 
 ReactDom.render(
     <div>
@@ -18,4 +19,7 @@ ReactDom.render(
         <RCP />
         <h2> 로또게임 </h2>
         <Lotto />
+
+        <h2> 틱택토 </h2>
+        <TicTacToe />
     </div>, document.querySelector('#root'))

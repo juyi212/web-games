@@ -48,10 +48,8 @@ const RCP = () => {
   const interval = useRef();
 
   useEffect(() => { // componentDidMount, componentDidUpdate 역할(1대1 대응은 아님)
-    console.log('다시 실행');
     interval.current = setInterval(changeHand, 100);
     return () => { // componentWillUnmount 역할
-      console.log('종료');
       clearInterval(interval.current);
     }
   }, [imgCoord]);

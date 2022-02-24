@@ -36,7 +36,7 @@ module.exports = {
         }]
     }, // 모듈을 적용한 후 
     plugins: [
-        new RefreshWebpackPlugin({ overlay: false }),
+        new RefreshWebpackPlugin(),
         new LoaderOptionsPlugin({ debug: true }), 
     ],
     output: {
